@@ -1,0 +1,29 @@
+.genre {
+    &__collection {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: rem(40px);
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100px;
+            background: linear-gradient(to right, rgba(12, 12, 12, 0.01) 0%, rgba(12, 12, 12, 0.7) 50%, #0c0c0c 100%);
+            pointer-events: none;
+        }
+         &-title {
+            margin-bottom: rem(16px);
+         }
+         .show__list-item {
+            &:last-child {
+                padding-right: rem(48px);
+            }
+         }
+    }
+}
